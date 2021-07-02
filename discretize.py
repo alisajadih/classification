@@ -5,7 +5,7 @@ class discretize:
     def calc_stage(self, value):
         lower_value = value.lower()
         if lower_value == 'won':
-            return 2
+            return 1
         if lower_value == 'lost':
-            return 0
-        return 1
+            return -1
+        return 0
